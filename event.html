@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+  <title>Our Events</title>
+  <link rel="icon" href="./assets/img/finance_club_logo.png" type="image/gif" sizes="20x20">
+
+  <!-- Favicons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets_team/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="Join_Us/form.css">
+
+
+  <!-- event css file -->
+
+  <link rel="stylesheet" href="events/styles.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<!--pop-up join_us Form  -->
+<div class="container form-popup scrollset" id="joinusForm">
+  <div class="container mt-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+      class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+      <path
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+    </svg>
+  </div>
+  <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+    <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+  </div>
+  <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+    <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+      <div class="col-md-4">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="Name" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="roll_no" class="form-label">Roll No.</label>
+        <input type="text" class="form-control" name="Roll No." required>
+      </div>
+      <div class="col-md-4">
+        <label for="branch" class="form-label">Branch</label>
+        <input type="text" class="form-control" name="Branch" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="Email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+        <input class="form-control" type="text" name="Resume" required>
+      </div>
+      <div class="col-md-12">
+        <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+        <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+      </div>
+      <div class="col-md-12">
+        <label for="Query" class="form-label">Other questions/queries if any?</label>
+        <textarea type="text" class="form-control" name="Query"></textarea>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary" type="submit">Apply</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+<!-- end of pop-up form -->
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets_team\img\only_logo_65x40.png" alt="">
+        <span>Finance Club</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link " href="index.html">Home</a></li>
+          <li><a class="nav-link " href="index.html#about">About</a></li>
+          <li><a class="nav-link active " href="index.html#services">Events</a></li>
+          <!--<li><a class="nav-link " href="index.html#services">Workshop</a></li>-->
+          <li><a class="nav-link  " href="index.html#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="team.html">Team</a></li>
+          <li><a class="nav-link " href="index.html#contact">Contact</a></li>
+          <li><a class="getstarted cursor" onclick="openForm()">JOIN US</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!--pop-up join_us Form  -->
+  <div class="container form-popup scrollset" id="joinusForm">
+    <div class="container mt-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+        class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+        <path
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+      </svg>
+    </div>
+    <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+      <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+    </div>
+    <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+      <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+        <div class="col-md-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="Name" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="roll_no" class="form-label">Roll No.</label>
+          <input type="text" class="form-control" name="Roll No." required>
+        </div>
+        <div class="col-md-4">
+          <label for="branch" class="form-label">Branch</label>
+          <input type="text" class="form-control" name="Branch" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="Email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+          <input class="form-control" type="text" name="Resume" required>
+        </div>
+        <div class="col-md-12">
+          <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+          <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+        </div>
+        <div class="col-md-12">
+          <label for="Query" class="form-label">Other questions/queries if any?</label>
+          <textarea type="text" class="form-control" name="Query"></textarea>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit">Apply</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- end of pop-up form -->
+
+
+  <main id="main">
+    <!-- ======= events Section ======= -->
+    <section id="events" class="team section-bg">
+
+      <div class="section-title sec-title">
+        <h2>Events</h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      </div>
+
+      <!-- Event Section -->
+      <div class="row gy-4 rowcontainer">
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="100">
+          <img class="eventimage  innercontainer" src="events/event_image/bit_nishan.jpg" alt="">
+          <div class="overlay">
+            <div class="text">The Institution's Innovation council of BIT Mesra, in association with the Finance Club BIT Mesra and the Entrepreneurship Development Cell, 
+              is back with an innovation contest to test and reward the entrepreneurial prowess of the top ten teams that emerged victorious at BIT-NISHAN's business plan competition.</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="100">
+          <img class="eventimage " src="events/event_image/investers_hat.jpg" alt="">
+          <div class="overlay">
+            <div class="text">" An intelligent investor is a realist who sells to the optimist and buys from pessimist "
+              - Benjamin Graham
+              
+              Are you among those who have the talent to invest your money in a way that earns you profits?
+              Are you the one who understands the hacks of the investment world?
+              
+              If yes, then we at BIT Mesra have come up with an event INVESTOR'S HAT as a part of our annual tech fest Pantheon'22. </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="100">
+          <img class="eventimage" src="events/event_image/sirf_excel2.jpg" alt="">
+          <div class="overlay">
+            <div class="text" style="font-size: 16px;">Hola Finance-maniacs!
+              Finance Club BIT Mesra, in association with the Society for Data Science adds yet another exciting event to Pantheon’22, the Sirf Excel 2.0. 
+              This a nerve-wracking event that will test your expertise over the most powerful tool in the world of Account Management and Statistical-numerical analysis, MS Excel.</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="200">
+          <img class="eventimage" src="events/event_image/buisness_comp.jpg" alt="">
+          <div class="overlay">
+            <div class="text">“Everyone can tell you the risk. An entrepreneur can see the reward.”
+              Keeping in mind the plethora of creativity blooming in the youth, Finance Club BIT MESRA,
+               in collaboration with Institute Innovation Council and EDC BIT MESRA brings you Business Plan Competition-2022. The participants are required to register by 17th August 2022. The competition requires the participants to showcase their ideas in the form of a presentation in Hybrid mode.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="200">
+          <img class="eventimage" src="events/event_image/adquest.jpg" alt="">
+          <div class="overlay">
+            <div class="text" style="font-size: 16px;">Hola Bitians, for some of us knowing finance only through webinars and workshops can be quite boring.
+               To counter this, this time Finance Club BIT Mesra is going to organize "Ad Quest" which is our new upcoming event which will be held from 1st June to 6th June in which not only your knowledge will be tested about finance but there will be a fun way of learning too.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12  innercontainer" data-aos-delay="200">
+          <img class="eventimage " src="events/event_image/hedge_it.jpg" alt="">
+          <div class="overlay">
+            <div class="text">Are you the guy who thinks that your analytical thinking can create a change in the business empire? 
+              Hedgeit brings you the perfect chance to invest in and enhance your knowledge in the world of business.
+              .</div>
+          </div>
+        </div>
+      
+      <div class="col-lg-4 col-md-12  innercontainer" data-aos-delay="200">
+        <img class="eventimage " src="events/event_image/bts_2.jpg" alt="">
+        <div class="overlay">
+          <div class="text">If your summer evening schedule is all about rooting for your favourite IPL squad, we've got something in store for you.
+             Finance Club, BIT Mesra is thrilled to bring forward the second edition of its cricketing extravaganza, "Behind The Stumps, Into The Stats 2.0", as part of FinStreet'22. A challenging yet straightforward event, especially for a cricket pundit like you, packed with mid-offs and mid-ons, ducks and misses, silly points and fly slips!</div>
+        </div>
+      </div>
+    
+    <div class="col-lg-4 col-md-12  innercontainer" data-aos-delay="200">
+      <img class="eventimage " src="events/event_image/stalk_the_stock.jpg" alt="">
+      <div class="overlay">
+        <div class="text">If, you are thrilled by the jump in the price of Tesla stock and become anxious because of the topsy turvy curve of bitcoin. 
+          We, Finance Club, BIT Mesra have something incredible for you in-store. Finance club BIT Mesra is back with another event that will hold you captive: Stalk the Stock</div>
+      </div>
+    </div>
+  </div>
+    </section>
+     
+
+      <!-- workshop section -->
+    <section id="workshop">
+
+      <div class="section-title sec-title">
+        <h2>Workshops and Webinars</h2>
+
+      </div>
+      <div class="row gy-4 rowcontainer">
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="300">
+          <img class="eventimage  innercontainer" src="events/workshop_image/workshop_11.jpg" alt="">
+          <div class="overlay">
+            <div class="text"> The days are gone when finance was primarily responsible for bookkeeping and transaction only. But today, with the help of financial analytics, finance practitioners are well equipped to act efficiently to make strategic decisions and predict the future in a complex and ever-changing environment to retain a competitive advantage.
+              The Finance Club BIT Mesra is organizing an 
+              interactive webinar on "Data Analytics and Impact on Financial process and Reporting " by Mrs.Manya Gaurav. 
+              He is a BIT Alumni and the sales operation analyst in Data governance and access control. So Crosstour the calendar on 20 Aug 2022 and don't miss this awesome event. See you all there! 
+              Date and time: 7:30 pm 20 Aug 2022</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="300">
+          <img class="eventimage  innercontainer" src="events/workshop_image/workshop_10.jpg" alt="">
+          <div class="overlay">
+            <div class="text">  Hola Fin-keens, as we all are seeing the situation of the market in the present scenario, it is clear that Covid has not only affected our health but also it has shown its effect on the market. For some, those sudden changes were a miracle but for some, they turned out to be nothing more than a curse. But as change is the only constant, so we need to accept these changes and change ourselves and our financial strategies accordingly.
+              Having a view of this, the Finance Club BIT Mesra has decided to spread awareness about the newly transformed market through our webinar 
+              which is to be held on the 13th of May at 6 pm by our honorable guest speaker, 
+              Mr. Nisant Mohta, Founder, Finlatics. Your presence there will be highly appreciated.</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="300">
+          <img class="eventimage  innercontainer" src="events/workshop_image/workshop_9.jpg" alt="">
+          <div class="overlay">
+            <div class="text"> "Do more of what works and less of what doesn't."
+
+              Everyone would have heard this renowned quote.
+               Everyone wants to make profits in stock market but only a few know how to leverage the use of technology to make the money work for them.
+              
+              Finance Club is back with an Interactive Masterclass under its flagship event FinStreet;22, where our keynote speaker
+               Mr. Vishnu Bharath S. will illumine us with the importance of Derivatives and Quantitative Trading. 
+               So cross your calendars on 29th and 30th March and don't miss this fortunate stroke of serendipity.</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="300">
+          <img class="eventimage  innercontainer" src="events/workshop_image/workshop_8.jpg" alt="">
+          <div class="overlay">
+            <div class="text"> The workshop shall be structured in an easy to imbibe module wise format for better learning,
+               with topics ranging from basics to the very pinnacles of the finance world. It shall be a great opportunity for finance enthusiasts to learn about Strategies in Finance from Industry Professionals, with each resource person being a stalwart in their field.</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="300">
+          <img class="eventimage  innercontainer" src="events/workshop_image/workshop_7.jpg" alt="">
+          <div class="overlay">
+            <div class="text">Everyone would have heard this renowned quote. Everyone wants their job to feel more like living. But if you have any doubts on how to traverse the "Path to your dream job" then there's no need for fretting.FINANCE CLUB is back with an interactive webinar, in collaboration with "BUDDING ANALYST", where our keynote speaker Mr. Kapil Makhija will illumine us with the importance of practical learning.</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="300">
+          <img class="eventimage  innercontainer" src="events/workshop_image/workshop_6.jpg" alt="">
+          <div class="overlay">
+            <div class="text">Want to know what was Mr. Adani's thoughts behind such a statement?? Curious about how the aftermath of coronavirus would be on the Indian economy and market ???
+               For all the market enthusiasts out there, Finance Club is back with another enlightening webinar on "Turning crisis into opportunity: Leveraging the digital transformation" With beaming pride we wish to announce that two BIT alumni, Ms Adya Singh, a research analyst at Delloite and Ms Shruti Shree, a business analyst at Affine will be gracing the event as resource person to unveil a plethora of market success mantras.</div>
+          </div>
+        </div>
+
+        
+
+    
+      
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>Finance Club,BIT MESRA</span>
+            </a>
+            <p align="justify">We aim to acquaint the students with basic economic and
+              financial concepts and terminology. The club shall guide people on how they can
+              generate a passive source of income through the skills
+              they possess through holistic development.</p>
+            <div class="social-links mt-3">
+              <a href="https://github.com/Finance-Club-Bit-Mesra" class="twitter"><i class="bi bi-github"></i></a>
+              <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i
+                  class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i
+                  class="bi bi-linkedin bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Events</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="event.html#workshop">Workshops</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="team.html">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Events and Workshops</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Launch Event</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="event.html#workshop">Workshop</a></li>
+              <!--<li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              BIT MESRA
+              Ranchi,<br>
+              Jharkhand <br><br>
+              <strong>Phone:</strong> Kuber Gupta (President):<br><a href="tel:+91 9479314939">+91 9479314939</a> <br>
+              <strong>Email: </strong><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a><br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Finance Club</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets_team/vendor/aos/aos.js"></script>
+  <script src="assets_team/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets_team/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets_team/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets_team/vendor/php-email-form/validate.js"></script>
+  <script src="assets_team/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets_team/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets_team/js/main.js"></script>
+  <script src="Join_Us/form.js"></script>
+</body>
+
+</html>

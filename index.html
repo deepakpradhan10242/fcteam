@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!--<meta http-equiv="Refresh" content="0;URL=https://financeclubbitm.in" />	 -->
+  <title>Finance Club</title>
+  
+  <link rel="icon" href="./assets/img/finance_club_logo.png" type="image/gif" sizes="20x20">
+  <meta content="Author: finance club, Bit mesra, Category: Club Website, This is the landing page of Finance club website of birla institute of technology, mesra" name="description">
+
+  <meta content="Finance CLub, bit mesra, birla institute" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="Join_Us/form.css">
+
+  <!-- event css file -->
+  <link rel="stylesheet" href="events/styles.css">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header sticky-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/only_logo_65x40.png" alt="error loading image">
+        <span>Finance Club</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#hero">Home</a></li>
+          <li><a class="nav-link " href="#about">About</a></li>
+          <li><a class="nav-link " href="#services">Events</a></li>
+          <!--<li><a class="nav-link " href="#services">Workshop</a></li>-->
+		      <li><a class="nav-link  " href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link " href="team.html">Team</a></li> 
+          <li><a class="nav-link " href="#contact">Contact</a></li>
+          <li><a class="getstarted cursor" href="#" onclick="openForm()">JOIN US</a></li>
+          
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!--pop-up join_us Form  -->
+  <div class="container form-popup scrollset" id="joinusForm">
+    <div class="container mt-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-circle-fill closebtn float-end" viewBox="0 0 16 16" onclick="closeForm()">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+      </svg>
+    </div>
+    <div class="card mx-auto mt-3 logobox" style="max-width: 25rem;min-width: none;">
+      <img src="assets/img/finance_club_logo.png" alt="error" class="logo my-auto">
+    </div>
+    <div class="container card mx-auto px-5 pb-5 formbox" style="max-width: 60rem;min-width: none;">
+      <form method="post" autocomplete="off" name="google-sheet" class="row g-3 needs-validation innercontent">
+        <div class="col-md-4">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="Name" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="roll_no" class="form-label">Roll No.</label>
+          <input type="text" class="form-control" name="Roll No." required>
+        </div>
+        <div class="col-md-4">
+          <label for="branch" class="form-label">Branch</label>
+          <input type="text" class="form-control" name="Branch" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="Email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="resume" class="form-label">Resume Link / Linkedin Profile Link</label>
+          <input class="form-control" type="text" name="Resume" required>
+        </div>
+        <div class="col-md-12">
+          <label for="Reason" class="form-label">Why do you wish to join the club?</label>
+          <textarea type="text" class="form-control" name="Reason for joining" required></textarea>
+        </div>
+        <div class="col-md-12">
+          <label for="Query" class="form-label">Other questions/queries if any?</label>
+          <textarea type="text" class="form-control" name="Query"></textarea>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit">Apply</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- end of pop-up form -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Finance Club Bit Mesra</h1>
+          <h2>UNLEASH THE CORPORATE TYCOON WITHIN YOU</h2>
+          <div class="d-flex btn-grp">
+            <a href="#" onclick="openForm()" class="btn-get-started scrollto cursor">JOIN US</a>
+
+            <!--====== popup vdo section========-->
+            <div id="light">
+              <a class="boxclose" id="boxclose" href="#" onclick="lightbox_close();"></a>
+              <video id="teaser" width="600" controls>
+                <source src="assets/img/fcvdo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="fade" onClick="lightbox_close();"></div>
+
+            <div>
+              <a href="#" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true" onclick="lightbox_open();">Watch video <i style="background: none;" class="fas fa-play-circle"></i></a>
+            </div>
+
+            <!--===== popup vdo section close====--->
+          </div>
+
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>About</h2>
+          <p>About us</p>
+        </header>
+
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="content">
+              <h2>Who We Are</h2>
+              <h3>Finance Club</h3>
+              <p align="justify">
+                The Finance Club, BIT Mesra has been established with the aim to acquaint the students with economic and financial concepts enabling them to cope up with the complex financial world outside. The club provides the opportunity to gain
+                various financial skills which will not only help them manage their personal finances well but also generate passive source of income. It gives the platform where finance enthusiasts can come together for all round holistic
+                development in an atmosphere of friendly competition.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#values" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Know More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+
+    <!-- ======= key skills Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>What We Do</h2>
+          <p>Key Skills We Work Upon</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <h3>FINANCIAL MANAGEMENT COURSE</h3>
+              <p>30 HOURS NON - CREDIT BASED FINANCIAL MANAGEMENT COURSE WITH FINANCE SOFTWARE</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/values-2.png" class="img-fluid" alt="">
+              <h3>LECTURES / SEMINARS / LIVE SESSIONS</h3>
+              <p>LECTURES / SEMINARS / LIVE SESSIONS ON GST, TAXES, INSURANCES, INVESTMENT OPTIONS</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/values-3.png" class="img-fluid" alt="">
+              <h3>TEACHING</h3>
+              <p>TEACHING ON ALL TYPES OF IMPORTANT FINANCIAL SCOPES</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End key skills Section -->
+
+    <!-- ======= Objective Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>OBJECTIVES</h2>
+          <p>Objectives of the Club</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/20943477.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Stock Analysis</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Insurance and Taxation</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Financial Softwares</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Freelancing</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Investment and Trading</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Tackle Financial Crisis</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+    </section> <!-- END of objective section row -->
+
+
+    <!-- ======= Events and Workshops Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>EVENTS</h2>
+          <p>Events and Workshops</p>
+        </header>
+
+        <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="100">
+          <img class="eventimage  innercontainer" src="events/event_image/bit_nishan.jpg" alt="">
+          <div class="overlay">
+            <div class="text">The Institution's Innovation council of BIT Mesra, in association with the Finance Club BIT Mesra and the Entrepreneurship Development Cell, 
+              is back with an innovation contest to test and reward the entrepreneurial prowess of the top ten teams that emerged victorious at BIT-NISHAN's business plan competition.</div>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="100">
+          <img class="eventimage " src="events/event_image/investers_hat.jpg" alt="">
+          <div class="overlay">
+            <div class="text">" An intelligent investor is a realist who sells to the optimist and buys from pessimist "
+              - Benjamin Graham
+              
+              Are you among those who have the talent to invest your money in a way that earns you profits?
+              Are you the one who understands the hacks of the investment world?
+              
+              If yes, then we at BIT Mesra have come up with an event INVESTOR'S HAT as a part of our annual tech fest Pantheon'22. </div>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-12 innercontainer" data-aos-delay="100">
+          <img class="eventimage" src="events/event_image/sirf_excel2.jpg" alt="">
+          <div class="overlay">
+            <div class="text" style="font-size: 16px;">Hola Finance-maniacs!
+              Finance Club BIT Mesra, in association with the Society for Data Science adds yet another exciting event to Pantheon’22, the Sirf Excel 2.0. 
+              This a nerve-wracking event that will test your expertise over the most powerful tool in the world of Account Management and Statistical-numerical analysis, MS Excel.</div>
+          </div>
+        </div>
+        
+        </div>
+          
+        <div class="d-grid gap-2" style="margin-top:10px;">
+          <a href="event.html" class="btn btn-primary" style="background-color: #4154F1" type="button" >
+              <h5>More events.....</h5>
+          </a>
+        </div>
+        
+      </div>
+</section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Testimonials</h2>
+        <p>What They Are Saying About Us</p>
+      </header>
+
+      <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="swiper-wrapper">  
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                As the president of the Finance Club, it was my greatest honor to manage a team of 80+ club members. The solidarity between every member of the association is something we are really proud of. Finance Club is a tremendous catalyst for business school students interested in building strong finance knowledge. 
+		     <span class="read-more-text">
+		      You will surely find colleagues, probably friends and maybe a second family.
+		 </span>
+              </p>
+		    <span class="read-more-btn">Read More...</span>
+              <div class="profile mt-auto">
+                <img src="assets/img/team/kuber.jpeg" class="testimonial-img" alt="">
+                <h3>Kuber Gupta</h3>
+                <h4> President</h4>
+              </div>
+            </div>
+          </div>
+		
+        <div class="swiper-slide">
+            <div class="testimonial-item">
+             <p>
+                As the joint president of the Finance Club, it was my greatest honor to manage a team of 80+ club members. The solidarity between every member of the association is something we are really proud of. Finance Club is a tremendous catalyst for business school students interested in building strong finance knowledge. 
+		     <span class="read-more-text">
+		      You will surely find colleagues, probably friends and maybe a second family.
+		 </span>
+              </p>
+		    <span class="read-more-btn">Read More...</span>
+              <div class="profile mt-auto">
+                <img src="assets/img/team/Ayush Kumar.jpg" class="testimonial-img" alt="">
+                <h3>Ayush Kumar</h3>
+                <h4>Joint President</h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="testimonial-item">              
+              <p>"Finance Club- BIT Mesra” a new student’s body society was started April 2021 for all UG and PG students not only in the BIT Mesra campus but also other off campus BIT Mesra across the country. The main objective of this club body is to acquaint the students with basic economic 
+		      <span class="read-more-text">
+		      and financial concepts and terminology which in turn will hand over to them the required tools to cope up with the complex financial world outside and to manage their finances as well. This club shall guide students on how they can generate a passive source of income through the skills they possess through holistic development and learning how to make profitable investments with low risk requires time, patience and most importantly experience. The club wishes to incite students to take up the challenging task of knowing the world and its financial aspects, organize workshops, Quizzes, Webinar and hands on training in financial analytics and intelligence.
+		      </span>
+			      </p>
+		     <span class="read-more-btn">Read More...</span>
+              <div class="profile mt-auto">
+                <img src="assets/img/testimonials/dean-sw.jpg" class="testimonial-img" alt="">
+                <h3>Dr.Anand Kumar Sinha</h3>
+                <h4>Dean Student Affairs</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">              
+              <p>"Finance Club- BIT Mesra” a new student’s body society was started April 2021 for all UG and PG students not only in the BIT Mesra campus but also other off campus BIT Mesra across the country. The main objective of this club body is to acquaint the students with basic economic 
+		      <span class="read-more-text">
+		      and financial concepts and terminology which in turn will hand over to them the required tools to cope up with the complex financial world outside and to manage their finances as well. This club shall guide students on how they can generate a passive source of income through the skills they possess through holistic development and learning how to make profitable investments with low risk requires time, patience and most importantly experience. The club wishes to incite students to take up the challenging task of knowing the world and its financial aspects, organize workshops, Quizzes, Webinar and hands on training in financial analytics and intelligence.
+		      </span>
+		       </p>
+		    <span class="read-more-btn">Read More...</span>
+              <div class="profile mt-auto">
+                <img src="assets/img/testimonials/Fac advisor.jpg" class="testimonial-img" alt="">
+                <h3>Dr.Anand Prasad Sinha</h3>
+                <h4>Faculty Advisor</h4>
+              </div>
+            </div>
+          </div>          
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">                 
+              <p>
+                Basking in the privilege and fulfilling the strenuous responsibility of the Vice President of one of the fastest-growing clubs in the history of BIT MESRA has been an enigmatic yet enjoyable journey. In just one year of our genesis, we have grown from a family of just a handful of Finance aficionados 
+		     <span class="read-more-text">
+		      to around 90 very talented BITians, with each club member inducted after a grilling recruitment process with a selection rate of less than 30%. We feel exhilarated to give unparalleled guidance to BITians, especially our club members, through innumerable webinars, seminars, events, talks etc. While extending a cordial invitation to all the finance enthusiasts to join us, I would say that our already successful journey has merely begun.
+		      </span>
+			     </p>
+		     <span class="read-more-btn">Read More...</span>
+              <div class="profile mt-auto">
+                <img src="assets/img/team/Kartikeya Pandey.png" class="testimonial-img" alt="">
+                <h3>Kartikeya Pandey</h3>
+                <h4>Vice President</h4>
+              </div>
+            </div>
+          </div>
+		
+         <div class="swiper-slide">
+            <div class="testimonial-item">              
+              <p>Being a part of Finance Club BIT Mesra helped me a lot to grow in my academic and professional career. Whether it be projects at college or management at companies, Finance Club helped me to think quantitatively and manage things effectively.
+		     <span class="read-more-text">
+		      Inviting the interested folks who think progressive and wish to make a mark in their professional journey, to join Finance Club!
+		      </span>
+                </p>
+		    <span class="read-more-btn">Read More...</span>
+              <div class="profile mt-auto">
+                <img src="assets/img/team/Pranshu.jpg" class="testimonial-img" alt="">
+                <h3>Pranshu Singh</h3>
+                <h4>Vice President</h4>
+              </div>
+            </div>
+          </div>    
+		<div class="swiper-slide">
+            <div class="testimonial-item">              
+              <p>If you are a finance enthusiast, this place is the best way to meet other like-minded people. In my personal opinion, this organization is an accurate mix of fun, knowledge and finance. There's an ocean of good events and webinars that can be a great source of information which are being conducted here.
+		  </p>
+              <div class="profile mt-auto">
+                <img src="assets/img/team/ritik.png" class="testimonial-img" alt="">
+                <h3>Ritik Raj Sharma</h3>
+                <h4>Vice President</h4>
+              </div>
+            </div>
+          </div>    
+	
+        </div><!--swapper wrapper ends-->
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <div class="info-box">
+                  <a href="http://maps.google.com/?q=Birla Institute of Technology, Mesra, Jharkhand 835215"><i class="bi bi-geo-alt"></i>
+                    <h3>Address</h3>
+                    <p>Finance Club, BIT MESRA <br>
+                      Ranchi, Jharkhand</p><br>
+                  </a>
+                  <img src="assets/img/map.png" class="img-fluid" alt="map-image">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <strong>Dr. Anand Prasad Sinha, Faculty &nbsp; Advisor</strong><br><a href="tel: +919835127919">+919835127919</a><br><br>
+                  <strong>Mahak Shah, President</strong><br><a href="tel: +918905002991">+918905002991</a><br><br>
+                  <strong>Sakshat, Joint President</strong><br><a href="tel: +918860953349">+918860953349</a><br>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-box">
+                  <a href="mailto:financeclub@bitmesra.ac.in">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a></p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="social-links mt-3">
+                  <h1>
+                    <a href="https://github.com/Finance-Club-Bit-Mesra" class="github"><i class="bi bi-github"></i></a>
+                    <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-6">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdV3hOqzoLvNStZW1w_KMsOey3OHKXlovQVv-td90r_o_NWzg/formResponse" target="_blank" method="POST" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="entry.1602679288" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="entry.168414878" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="entry.765786806" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="entry.1582625249" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End main  -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>Finance Club,BIT MESRA</span>
+            </a>
+            <p align="justify">We aim to acquaint the students with basic economic and
+              financial concepts and terminology. The club shall guide people on how they can
+              generate a passive source of income through the skills
+              they possess through holistic development.</p>
+            <div class="social-links mt-3">
+              <a href="https://github.com/Finance-Club-Bit-Mesra" class="twitter"><i class="bi bi-github"></i></a>
+              <a href="https://www.facebook.com/Finance-Club-BIT-Mesra-102681781906064/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/financeclub_bitm/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/financeclubbit/" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Events</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="event.html#workshop">Workshops</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="team.html">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Events and Workshops</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Launch Event</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="event.html#workshop">Workshop</a></li>
+              <!--<li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              BIT MESRA
+              Ranchi,<br>
+              Jharkhand <br><br>
+              <strong>Phone:</strong> Mahak Shah (President):<br><a href="tel: +918905002991">+918905002991</a> <br>
+              <strong>Email: </strong><a href="mailto:financeclub@bitmesra.ac.in">financeclub@bitmesra.ac.in</a><br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Finance Club</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<!--   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min"></script> -->
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="Join_Us/form.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ 
+
+
+</body>
+
+</html>
